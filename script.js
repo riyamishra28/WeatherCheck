@@ -24,6 +24,18 @@ const fetchWeatherData = async (city) => {
       const JsonResponse =  JSON.parse(result);
 
       return JsonResponse;
+       /* const LatLong = JsonResponse.coord;
+      const mainObj = JsonResponse.main;
+      const temperature = mainObj.temp;
+      const feelsLike = mainObj.feels_like;
+      const minTemperature = mainObj.temp_min;
+      const maxTemperature = mainObj.temp_max; 
+      */
+
+
+      //console.log(JsonResponse);
+      //console.log(LatLong);
+      //console.log(temperature);
     } catch (error) {
       console.error(error);
     }
